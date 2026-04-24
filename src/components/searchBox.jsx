@@ -10,7 +10,7 @@ function Searchbox({input, setImput, inputRef, deleteAndF}){
             <form
             onSubmit={handleSubmit}
             action="">
-                <input className="hover:bg-white focus:bg-white color-white focus:color-green-900 h-15 w-55 rounded-l-full transition delay-150 duration-300 ease-in-out"
+                <input className="hover:bg-white focus:bg-white focus:color-green-900 h-15 w-55 rounded-l-full transition delay-150 duration-300 ease-in-out"
                 onChange= {(e)=>setImput(e.target.value)}
                 value={input}
                 ref={inputRef} 
@@ -24,5 +24,6 @@ function Searchbox({input, setImput, inputRef, deleteAndF}){
     )
 
 }
+
 
 export default Searchbox

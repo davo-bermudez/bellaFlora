@@ -1,16 +1,7 @@
-# React + Vite
+En un mercado donde las flores suelen limitarse a lo tradicional, este proyecto redefine la experiencia de regalar y decorar con un enfoque moderno, emocional y personalizado. No es solo una tienda de flores, es un espacio donde cada ramo cuenta una historia.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nuestra propuesta combina diseño creativo, tecnología y detalle artesanal para ofrecer arreglos únicos que se adaptan a cada ocasión y personalidad. A diferencia de las floristerías convencionales, aquí el cliente no solo elige flores: construye una experiencia. Desde la selección de colores hasta el estilo del empaque, todo está pensado para generar impacto visual y conexión emocional.
 
-Currently, two official plugins are available:
+Además, integramos una plataforma digital intuitiva que permite personalizar pedidos en tiempo real, visualizar combinaciones antes de comprarlas y acceder a entregas rápidas y confiables. Cada producto está diseñado para destacar, ya sea como un regalo significativo o como un elemento decorativo que transforma espacios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este proyecto apuesta por la innovación sin perder la esencia de lo natural, fusionando estética contemporánea con la belleza clásica de las flores. El resultado es una marca fresca, diferenciada y memorable, que convierte un simple ramo en una experiencia inolvidable.

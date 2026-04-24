@@ -1,5 +1,6 @@
 import NavBar from "../components/navBar"
 import "../styles/about.css"
+import rapunzel from "../images/rapunzel.jpeg"
 
 function About(){
     return(
@@ -14,7 +15,9 @@ function About(){
                         <h1 className="text-white text-4xl font-bold">Sobre Bella Flora</h1>
                         <p className="text-white">Todo empieza con la intencion de hacer un detalle, y nosotros somos epecialistas en ello, somos un equipo de jovenes dispuestos a entregar nuestro tiempo y calidad hacia nuestros clientes, brindandoles una experiencia y calidad unicas. </p>
                     </div>
-                    <div className="bg-emerald-700 h-full w-75 lg:w-200 rounded-xl">
+                    <div className="bg-emerald-700 h-full w-75 lg:w-200 rounded-xl flex items-center justify-center">
+
+                        <img src={rapunzel} alt="" className="h-100 rounded-xl rotate-20" />
 
                     </div>
                 </div>

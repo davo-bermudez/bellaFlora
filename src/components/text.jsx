@@ -1,7 +1,11 @@
 import "../styles/text.css"
 import rosasT from '../images/min.png'
+import { useCart } from "../contexts/CartContext"
 
 function Texto(){
+
+    const { addToCart } = useCart()
+    
     return(
         <section className="texto-container flex flex-col lg:flex-row justify-between">
             <div className="flex flex-col w-110 lg:w-200 h-100 gap-10 ">
@@ -22,7 +26,7 @@ function Texto(){
                     <h1>$45,000</h1>
                 </div>
                 <div>
-                    <button>añadelo al carrito</button>
+                    <button onClick={addToCart(1)}>añadelo al carrito</button>
                 </div>
             </div>
             <div>

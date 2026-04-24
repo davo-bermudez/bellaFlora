@@ -11,7 +11,7 @@ function Contact(){
             <section>
                 <NavBar/>
             </section>
-            <div className="flex flex-row gap-5 justify-center bg-green-950 p-10 rounded-lg">
+            <div className="flex flex-col lg:flex-row gap-5 justify-center bg-green-950 p-10 rounded-lg">
                 <div id="first-contact" className="flex h-140 w-120 rounded-lg gap-5 flex flex-col items-center">
                     <h1 className="font-bold">Contactanos</h1>
                     <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
