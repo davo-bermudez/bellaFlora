@@ -1,0 +1,75 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.nav-bar > div:first-child h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2d5016;
+}
+
+.nav-bar > div:nth-child(2) {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-bar > div:nth-child(2) button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-bar > div:nth-child(2) button:hover {
+  color: #2d5016;
+}
+
+.nav-bar > div:last-child {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-bar > div:last-child button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-bar > div:last-child button:hover {
+  color: #2d5016;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-bar > div:nth-child(2) {
+    width: 100%;
+    order: 3;
+  }
+}

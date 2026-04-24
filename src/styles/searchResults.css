@@ -1,0 +1,16 @@
+/* li ::after{
+    content: "";
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(195, 19, 19, 0.8);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    clip-path: circle(50% at 50% 50%);
+    z-index: -100;
+
+} */
+
+.texto{
+    color: #2d5016;
+}
