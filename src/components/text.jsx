@@ -4,7 +4,7 @@ import { useCart } from "../contexts/CartContext"
 
 function Texto(){
 
-    const { addToCart } = useCart()
+    const { addToCart } = useCart(1)
     
     return(
         <section className="texto-container flex flex-col lg:flex-row justify-between">
@@ -26,7 +26,7 @@ function Texto(){
                     <h1>$45,000</h1>
                 </div>
                 <div>
-                    <button onClick={addToCart(1)}>añadelo al carrito</button>
+                    <button onClick={() => addToCart({ id: 4, name: "Ramo 5 Rosas Eternas", price: "$45,000", image: rosasT })}>añadelo al carrito</button>
                 </div>
             </div>
             <div>

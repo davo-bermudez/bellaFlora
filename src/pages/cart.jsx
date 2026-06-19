@@ -19,11 +19,8 @@ function Cart(){
             </div>
             <CartSummary
             cartList={cart}
-            deleted={() => removeFromCart}
+            deleted={removeFromCart}
             />
-
-
-
         </section>
     )
 
