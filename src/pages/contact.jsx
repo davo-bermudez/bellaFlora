@@ -12,18 +12,18 @@ function Contact(){
                 <NavBar/>
             </section>
             <div className="flex flex-col lg:flex-row gap-5 justify-center bg-green-950 p-10 rounded-lg">
-                <div id="first-contact" className="flex h-140 w-120 rounded-lg gap-5 flex flex-col items-center">
+                <div id="first-contact" className="flex h-140 lg:w-120 w-80 rounded-lg gap-5 flex flex-col items-center">
                     <h1 className="font-bold">Contactanos</h1>
                     <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
                     <label htmlFor="name">nombre</label>
-                    <input className="rounded-full h-10 w-100" type="text" name="name" id="name" placeholder="Tu nombre" />
+                    <input className=" rounded h-10 lg:w-100 w-60" type="text" name="name" id="name" placeholder="Tu nombre" />
                     <label htmlFor="email">correo electrónico</label>
-                    <input className="rounded-full h-10 w-100" type="email" name="email" id="email" placeholder="Tu correo electrónico" />
+                    <input className=" rounded h-10 lg:w-100 w-60" type="email" name="email" id="email" placeholder="Tu correo electrónico" />
                     <label htmlFor="message">tu mensaje</label>
-                    <textarea className="rounded-full h-20 w-100" name="message" id="message" placeholder="Tu mensaje"></textarea>
-                    <button className=" rounded h-10 w-100" type="submit">Enviar</button>
+                    <textarea className=" rounded h-20 lg:w-100 w-60" name="message" id="message" placeholder="Tu mensaje"></textarea>
+                    <button className=" rounded h-10 lg:w-100 w-60" type="submit">Enviar</button>
                 </div>
-                <div id="second-contact" className="flex h-140 w-120 rounded-lg gap-10 flex flex-col items-center">
+                <div id="second-contact" className="flex h-140 lg:w-120 w-80 rounded-lg gap-10 flex flex-col items-center">
                     <h1 className="text-2xl font-bold">O si lo prefieres, contáctanos por:</h1>
                     <div className="grid grid-cols-2 gap-10">
                         <div className="flex flex-col items-center">

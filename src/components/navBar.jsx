@@ -57,7 +57,7 @@ function NavBar(){
                 </div>
 
                 <div>
-                    {/* <button><AiOutlineUser/></button> */}
+                    {/* <button><AiOutlineUser/></button> */} 
                     <button onClick={goToCart}><AiOutlineShoppingCart/></button>
                     <button className="flex lg:hidden" onClick={desplegarMenu}><IoMenu /></button>
                 </div>
