@@ -51,28 +51,27 @@ function Catalogo() {
     })
 
     return(
-        <section className="catalogo flex flex-row lg:flex-col gap-5">
+        <section className="catalogo">
             <section className="navB">
                 <NavBar/>
             </section>
-            <div className="p-10 flex flex-col items-center"> 
-                <div className="bg-green-950/60 h-20 w-90 flex justify-center items-center rounded-full">
-                    <h1 className="text-white text-3xl font-bold">CATALOGO FLORAL</h1>
+            <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:px-10 flex flex-col items-center gap-8">
+                <div className="bg-green-950/60 h-20 w-full max-w-90 flex justify-center items-center rounded-full">
+                    <h1 className="text-white text-3xl font-bold">CATÁLOGO FLORAL</h1>
                 </div>
-                <div className="p-5 flex flex-col items-center gap-20"> 
-                    <div className="bg-green-950/60 h-20 w-90 flex justify-center items-center rounded-full">
-                        <Searchbox 
-                            input={input} 
-                            setImput={setInput} 
-                            deleteAndF={deleteAndF} 
-                            inputRef={inputRef}/>
-                    </div>
-                    <div className="catalago-img">
-                        <SearchResults 
-                            searchList={filtered}
-                            onAdd={addToCart}
-                            />
-                    </div>
+                <div className="bg-green-950/60 h-20 w-full max-w-90 flex justify-center items-center rounded-full">
+                    <Searchbox
+                        input={input}
+                        setImput={setInput}
+                        deleteAndF={deleteAndF}
+                        inputRef={inputRef}/>
+                </div>
+                <div className="catalago-img w-full flex justify-center">
+                    <SearchResults
+                        searchList={filtered}
+                        onAdd={addToCart}
+                        query={input}
+                        />
                 </div>
             </div>
         </section>
