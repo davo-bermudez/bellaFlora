@@ -63,7 +63,7 @@ function Catalogo() {
             <section className="navB">
                 <NavBar/>
             </section>
-            <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:px-10 flex flex-col items-center gap-8">
+            <div className="motion-safe:animate-pagina w-full max-w-7xl mx-auto px-4 py-8 sm:px-10 flex flex-col items-center gap-8">
                 <div className="bg-green-950/60 h-20 w-full max-w-90 flex justify-center items-center rounded-full">
                     <h1 className="text-white text-3xl font-bold">CATÁLOGO FLORAL</h1>
                 </div>

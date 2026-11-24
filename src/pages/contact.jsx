@@ -56,7 +56,7 @@ function Contact(){
                 <NavBar/>
             </section>
 
-            <div className="w-full px-4 sm:px-8 pb-16 flex justify-center">
+            <div className="motion-safe:animate-pagina w-full px-4 sm:px-8 pb-16 flex justify-center">
                 <div className="w-full max-w-5xl grid lg:grid-cols-2 bg-white rounded-3xl shadow-2xl overflow-hidden">
 
                     {/* ---------- Formulario ---------- */}

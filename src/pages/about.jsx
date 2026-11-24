@@ -52,7 +52,7 @@ function About() {
                 <NavBar />
             </section>
 
-            <div className="w-full max-w-6xl mx-auto px-4 sm:px-8 pb-20 flex flex-col gap-20">
+            <div className="motion-safe:animate-pagina w-full max-w-6xl mx-auto px-4 sm:px-8 pb-20 flex flex-col gap-20">
 
                 {/* ---------- HERO ---------- */}
                 <div className="relative overflow-hidden bg-green-950 rounded-3xl px-6 py-12 sm:px-12 lg:py-16 grid lg:grid-cols-2 gap-12 items-center">

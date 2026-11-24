@@ -14,7 +14,7 @@ function Hero() {
     const selected = getProduct(selectedId)
 
     return (
-        <section className="relative w-full overflow-hidden lg:flex-1 lg:flex lg:items-center">
+        <section className="motion-safe:animate-pagina relative w-full overflow-hidden lg:flex-1 lg:flex lg:items-center">
 
             {/* Fondo: la misma imagen del producto, gigante y difuminada */}
             <img
