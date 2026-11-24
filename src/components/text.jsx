@@ -1,17 +1,20 @@
 import "../styles/text.css"
 import rosasT from '../images/min.png'
 import { useCart } from "../contexts/CartContext"
+import { getProduct, formatPrice } from "../data/products"
+
+const ramoRosas = getProduct(4)
 
 function Texto(){
 
-    const { addToCart } = useCart(1)
+    const { addToCart } = useCart()
     
     return(
         <section className="texto-container flex flex-col lg:flex-row justify-between">
             <div className="flex flex-col w-110 lg:w-200 h-100 gap-10 ">
                 <div className="">
                     <h1>donde los mejores detalles se vuelven realidad</h1>
-                </div>
+                </div>    
                 <div>
                     <h1>Elije y personaliza el tuyo</h1>
                 </div>
@@ -23,10 +26,10 @@ function Texto(){
                 </div>
                 <div className="flex flex-row gap-20 justify-center">
                     <h1>best seller</h1>
-                    <h1>$45,000</h1>
+                    <h1>{formatPrice(ramoRosas.price)}</h1>
                 </div>
                 <div>
-                    <button onClick={() => addToCart({ id: 4, name: "Ramo 5 Rosas Eternas", price: "$45,000", image: rosasT })}>añadelo al carrito</button>
+                    <button onClick={() => addToCart(ramoRosas)}>añadelo al carrito</button>
                 </div>
             </div>
             <div>

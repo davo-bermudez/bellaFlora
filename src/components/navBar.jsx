@@ -2,6 +2,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useCart } from "../contexts/CartContext";
 import "../styles/navBar.css"
 import brandImage from '../images/brand.jpeg'
 import { IoMdSunny } from "react-icons/io";
@@ -15,11 +16,11 @@ function NavBar(){
     const [menuOpen, setMenuOpen] = useState(false)
 
     function desplegarMenu(){
-        const toggle = setMenuOpen(!menuOpen)
-        console.log(menuOpen)
+        setMenuOpen(!menuOpen)
     }
 
     const navigate = useNavigate()
+    const { itemCount } = useCart()
 
     function goToCatalogo(){
         navigate("/catalogo")
@@ -43,7 +44,7 @@ function NavBar(){
 
     return(
         <section>
-            <section className="nav-bar justify-between">
+            <section className="nav-bar justify-evenly">
                 <div>
                     <img src={brandImage} alt="Bella Flora Brand" className="h-10 w-10 rounded-full" />
                     <h1 className="hidden lg:flex">Bella Flora</h1>
@@ -58,7 +59,14 @@ function NavBar(){
 
                 <div>
                     {/* <button><AiOutlineUser/></button> */} 
-                    <button onClick={goToCart}><AiOutlineShoppingCart/></button>
+                    <button onClick={goToCart} className="relative" aria-label={`Carrito, ${itemCount} productos`}>
+                        <AiOutlineShoppingCart/>
+                        {itemCount > 0 && (
+                            <span className="absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center">
+                                {itemCount > 99 ? "99+" : itemCount}
+                            </span>
+                        )}
+                    </button>
                     <button className="flex lg:hidden" onClick={desplegarMenu}><IoMenu /></button>
                 </div>
             </section>

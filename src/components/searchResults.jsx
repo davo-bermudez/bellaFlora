@@ -1,4 +1,5 @@
 import AddToCart from "./addToCart"
+import { formatPrice } from "../data/products"
 import "../styles/searchResults.css"
 
 function SearchResults({searchList = [], onAdd}){
@@ -11,7 +12,7 @@ function SearchResults({searchList = [], onAdd}){
                         <p className="texto text-3xl font-bold">{i.name}</p>
                         <img className="product-image h-170 w-120 hover:scale-120 transition delay-150 duration-300 ease-in-out " src={i.image} alt={i.name} />
                         <p className="texto ">{i.description}</p>
-                        <p className="bg-green-900 p-3 w-30 text-2xl flex items-center justify-center text-white rounded">{i.price}</p>
+                        <p className="bg-green-900 p-3 px-4 text-2xl flex items-center justify-center text-white rounded">{formatPrice(i.price)}</p>
                         <div>
                         <AddToCart product={i} onAdd={onAdd} />
                         </div>
