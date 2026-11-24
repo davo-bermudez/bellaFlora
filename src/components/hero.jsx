@@ -14,7 +14,7 @@ function Hero() {
     const selected = getProduct(selectedId)
 
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full overflow-hidden lg:flex-1 lg:flex lg:items-center">
 
             {/* Fondo: la misma imagen del producto, gigante y difuminada */}
             <img
@@ -29,21 +29,21 @@ function Hero() {
             <div className="hidden lg:flex absolute top-0 right-0 h-full w-56 xl:w-64 bg-emerald-700 rounded-l-[3rem] items-center justify-end pr-4" aria-hidden="true">
                 <span
                     key={`panel-${selected.id}`}
-                    className="[writing-mode:vertical-rl] rotate-180 text-7xl xl:text-8xl font-black tracking-wider text-white/90 animate-aparecer"
+                    className="[writing-mode:vertical-rl] rotate-180 text-[clamp(3.5rem,10vh,6rem)] font-black tracking-wider text-white/90 animate-aparecer"
                 >
                     {selected.shortName}
                 </span>
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-6 sm:px-10 py-12 lg:py-16 grid lg:grid-cols-2 gap-10 items-center">
+            <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-10 py-12 lg:py-8 grid lg:grid-cols-2 gap-10 items-center">
 
                 {/* ---------- Columna de texto ---------- */}
-                <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left">
+                <div className="flex flex-col gap-6 lg:gap-[clamp(0.75rem,2.4vh,1.5rem)] items-center lg:items-start text-center lg:text-left">
                     <p className="text-emerald-300 font-bold tracking-[0.3em] text-sm sm:text-base">
                         BELLA FLORA ES…
                     </p>
 
-                    <h1 className="text-white uppercase leading-none text-5xl sm:text-6xl xl:text-7xl">
+                    <h1 className="text-white uppercase leading-none text-5xl sm:text-6xl lg:text-[clamp(3rem,8.5vh,4.5rem)]">
                         <span className="font-light">Puro </span>
                         <span className="font-black">amor</span>
                         <br />
@@ -85,7 +85,7 @@ function Hero() {
                     </div>
 
                     {/* Miniaturas: al hacer clic cambian el producto destacado */}
-                    <div className="flex flex-col gap-3 items-center lg:items-start mt-4">
+                    <div className="flex flex-col gap-3 items-center lg:items-start mt-4 lg:mt-2">
                         <div className="flex gap-3 sm:gap-4">
                             {products.map(product => {
                                 const active = product.id === selectedId
@@ -118,7 +118,7 @@ function Hero() {
                         key={`producto-${selected.id}`}
                         src={selected.image}
                         alt={selected.name}
-                        className="relative z-10 h-72 sm:h-[28rem] lg:h-[34rem] w-auto object-contain drop-shadow-2xl animate-aparecer hover:scale-105 transition-transform duration-500 ease-in-out"
+                        className="relative z-10 h-72 sm:h-[28rem] lg:h-[min(34rem,58vh)] w-auto object-contain drop-shadow-2xl animate-aparecer hover:scale-105 transition-transform duration-500 ease-in-out"
                     />
                     <span className="absolute z-20 top-1/2 right-4 sm:right-1/4 lg:right-16 xl:right-24 h-12 w-12 rounded-full bg-white text-emerald-600 flex items-center justify-center text-xl shadow-lg" aria-hidden="true">
                         <FaHeart />

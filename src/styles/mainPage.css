@@ -13,3 +13,10 @@
   width: 100%;
   padding: 2rem;
 }
+
+/* En computador la barra ocupa menos alto, para que el inicio quepa en la pantalla */
+@media (min-width: 1024px) {
+  .main-nav {
+    padding: 1.25rem 2rem;
+  }
+}
