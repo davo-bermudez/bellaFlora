@@ -21,13 +21,13 @@ function Searchbox({ input, setImput, inputRef, deleteAndF }) {
 
             <input
                 id="buscador"
-                className="w-full h-14 pl-14 pr-14 rounded-full bg-white text-green-950 text-lg shadow-md border-2 border-transparent placeholder:text-neutral-400 outline-none focus:border-green-900 focus:shadow-lg transition duration-300 ease-in-out"
+                className="w-full h-14 pl-14 pr-14 rounded-full bg-white text-green-950 text-base sm:text-lg shadow-md border-2 border-transparent placeholder:text-neutral-400 outline-none focus:border-green-900 focus:shadow-lg transition duration-300 ease-in-out"
                 onChange={(e) => setImput(e.target.value)}
                 value={input}
                 ref={inputRef}
                 type="text"
                 autoComplete="off"
-                placeholder="Buscar ramos, flores, ocasiones…"
+                placeholder="Buscar ramos o flores…"
             />
 
             {input === "" ? (

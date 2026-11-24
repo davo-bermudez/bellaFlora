@@ -46,7 +46,7 @@ function Cart() {
 
             <div className="motion-safe:animate-pagina flex flex-col items-center gap-8 px-4 pb-16">
                 <div className="bg-green-950/60 h-20 w-full max-w-90 flex justify-center items-center rounded-full">
-                    <h1 className="text-white text-3xl font-bold">Carrito de Compras</h1>
+                    <h1 className="text-white text-2xl sm:text-3xl font-bold">Carrito de Compras</h1>
                 </div>
 
                 {items.length === 0 ? (

@@ -113,16 +113,19 @@ function Hero() {
                 </div>
 
                 {/* ---------- Columna de la imagen ---------- */}
-                <div className="relative order-first lg:order-none flex justify-center lg:justify-end lg:pr-24 xl:pr-32">
-                    <img
-                        key={`producto-${selected.id}`}
-                        src={selected.image}
-                        alt={selected.name}
-                        className="relative z-10 h-72 sm:h-[28rem] lg:h-[min(36rem,62vh)] w-auto object-contain drop-shadow-2xl animate-aparecer scale-[1.45] hover:scale-[1.52] transition-transform duration-500 ease-in-out"
-                    />
-                    <span className="absolute z-20 top-1/2 right-4 sm:right-1/4 lg:right-16 xl:right-24 h-12 w-12 rounded-full bg-white text-emerald-600 flex items-center justify-center text-xl shadow-lg" aria-hidden="true">
-                        <FaHeart />
-                    </span>
+                <div className="relative order-first lg:order-none flex justify-center lg:justify-end lg:pr-40">
+                    {/* El corazón se posiciona respecto a la imagen, no a la columna */}
+                    <div className="relative">
+                        <img
+                            key={`producto-${selected.id}`}
+                            src={selected.image}
+                            alt={selected.name}
+                            className="relative z-10 h-72 sm:h-[28rem] lg:h-[min(36rem,62vh)] w-auto object-contain drop-shadow-2xl animate-aparecer scale-[1.45] hover:scale-[1.52] lg:scale-[1.3] lg:hover:scale-[1.37] xl:scale-[1.45] xl:hover:scale-[1.52] transition-transform duration-500 ease-in-out"
+                        />
+                        <span className="absolute z-20 top-1/2 -right-2 h-12 w-12 rounded-full bg-white text-emerald-600 flex items-center justify-center text-xl shadow-lg" aria-hidden="true">
+                            <FaHeart />
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
