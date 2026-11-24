@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
-function AddToCart({ product, onAdd }) {
+// light = versión blanca, para fondos oscuros
+function AddToCart({ product, onAdd, light = false }) {
 
     const [added, setAdded] = useState(false)
 
@@ -18,7 +19,13 @@ function AddToCart({ product, onAdd }) {
 
     return (
         <button
-            className={`${added ? "bg-emerald-600" : "bg-green-950"} h-12 px-5 rounded-xl text-white hover:scale-105 transition duration-300 ease-in-out`}
+            className={`${
+                added
+                    ? "bg-emerald-500 text-white"
+                    : light
+                        ? "bg-white text-green-950"
+                        : "bg-green-950 text-white"
+            } h-12 px-5 rounded-xl font-semibold hover:scale-105 transition duration-300 ease-in-out`}
             onClick={handleClick}
         >
             {added ? "Agregado ✓" : "Agregar al carrito"}

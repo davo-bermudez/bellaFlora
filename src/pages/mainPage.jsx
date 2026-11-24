@@ -1,17 +1,15 @@
 import NavBar from "../components/navBar"
-import Texto from "../components/text"
+import Hero from "../components/hero"
 import "../styles/mainPage.css"
 
 function MainPage(){
 
     return(
         <div className="main-page">
-            <section>
+            <section className="main-nav">
                 <NavBar/>
             </section>
-            <div className="flex flex-row">
-                <Texto/>
-            </div>
+            <Hero/>
         </div>
     )
 }

@@ -8,6 +8,7 @@ import rosas from '../images/rosas-rojas-transpa.png'
 export const products = [
     {
         id: 1,
+        shortName: "ROYALE",
         name: "Ramo Clash Royale",
         image: royale,
         price: 35000,
@@ -15,6 +16,7 @@ export const products = [
     },
     {
         id: 2,
+        shortName: "LIRIOS",
         name: "Lirios Azules",
         image: lirios,
         price: 50000,
@@ -22,6 +24,7 @@ export const products = [
     },
     {
         id: 3,
+        shortName: "RAPUNZEL",
         name: "Ramo Rapunzel",
         image: rapunzel,
         price: 120000,
@@ -29,6 +32,7 @@ export const products = [
     },
     {
         id: 4,
+        shortName: "ROSAS",
         name: "Ramo 5 Rosas Eternas",
         image: rosas,
         price: 45000,
