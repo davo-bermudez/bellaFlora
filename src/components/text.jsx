@@ -34,7 +34,7 @@ function Texto(){
             </div>
             <div>
                 <div className="flex flex-col justify-center items-center lg:flex-row">
-                    <div><img src={rosasT} alt="" className='h-150 w-110'/></div>
+                    <div><img src={rosasT} alt="" className='h-150 w-110 object-contain hover:scale-105 transition-transform duration-300 ease-in-out'/></div>
                     <div className="rotate-0 lg:rotate-270  h-30 w-80 flex items-center justify-center"><h1 className="text-1xl">5 rosas rojas</h1>
                     </div>
                 </div>

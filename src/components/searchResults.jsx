@@ -25,7 +25,7 @@ function SearchResults({ searchList = [], onAdd, query = "" }) {
                 >
                     <div className="bg-neutral-100 overflow-hidden">
                         <img
-                            className="w-full aspect-square object-contain p-4 hover:scale-105 transition-transform duration-300 ease-in-out"
+                            className="w-full aspect-square object-contain p-4 hover:scale-110 transition-transform duration-300 ease-in-out"
                             src={i.image}
                             alt={i.name}
                             loading="lazy"

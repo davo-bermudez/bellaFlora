@@ -46,7 +46,7 @@ function NavBar(){
         <section>
             <section className="nav-bar justify-evenly">
                 <div>
-                    <img src={brandImage} alt="Bella Flora Brand" className="h-10 w-10 rounded-full" />
+                    <img src={brandImage} alt="Bella Flora Brand" className="h-10 w-10 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out" />
                     <h1 className="hidden lg:flex">Bella Flora</h1>
                 </div>
 

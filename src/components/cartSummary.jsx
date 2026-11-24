@@ -9,7 +9,7 @@ function CartSummary({ items = [], onIncrease, onDecrease, onRemove }) {
                     className="flex flex-col sm:flex-row items-center gap-4 bg-white rounded-xl shadow p-4"
                 >
                     <img
-                        className="h-28 w-28 object-contain shrink-0"
+                        className="h-28 w-28 object-contain shrink-0 hover:scale-110 transition-transform duration-300 ease-in-out"
                         src={i.image}
                         alt={i.name}
                     />
