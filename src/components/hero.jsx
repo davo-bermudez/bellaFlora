@@ -95,13 +95,13 @@ function Hero() {
                                         onClick={() => setSelectedId(product.id)}
                                         aria-pressed={active}
                                         aria-label={`Ver ${product.name}`}
-                                        className={`h-16 w-16 sm:h-20 sm:w-20 rounded-2xl p-1 transition duration-300 ${
+                                        className={`h-16 w-16 sm:h-20 sm:w-20 rounded-2xl p-1 overflow-hidden transition duration-300 ${
                                             active
                                                 ? "bg-emerald-600 ring-2 ring-white scale-110"
                                                 : "bg-white/10 hover:bg-white/20 hover:-translate-y-1"
                                         }`}
                                     >
-                                        <img src={product.image} alt="" className="h-full w-full object-contain" />
+                                        <img src={product.image} alt="" className="h-full w-full object-contain scale-[1.6]" />
                                     </button>
                                 )
                             })}
@@ -118,7 +118,7 @@ function Hero() {
                         key={`producto-${selected.id}`}
                         src={selected.image}
                         alt={selected.name}
-                        className="relative z-10 h-72 sm:h-[28rem] lg:h-[min(34rem,58vh)] w-auto object-contain drop-shadow-2xl animate-aparecer hover:scale-105 transition-transform duration-500 ease-in-out"
+                        className="relative z-10 h-72 sm:h-[28rem] lg:h-[min(36rem,62vh)] w-auto object-contain drop-shadow-2xl animate-aparecer scale-[1.45] hover:scale-[1.52] transition-transform duration-500 ease-in-out"
                     />
                     <span className="absolute z-20 top-1/2 right-4 sm:right-1/4 lg:right-16 xl:right-24 h-12 w-12 rounded-full bg-white text-emerald-600 flex items-center justify-center text-xl shadow-lg" aria-hidden="true">
                         <FaHeart />
